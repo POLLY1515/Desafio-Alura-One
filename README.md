@@ -1,7 +1,13 @@
-# Desafio-Alura-One
-Primeiro Challeng Decodificador de texto.
-Este projeto produz a criptografia e decriptografia de textos.
-## Tecnologias Utilizadas
+#  Criptografia e decriptografia de texto
+## Sobre o projeto
+Este repositório foi criado para colocar em  prática os conhecimentos adquiridos no curso de frontend,utilizando as tecnologias, Html, css e javascript ,oferecido pela plataorma Alura em parceria com a Oracle.
+O objetivo do projeto foi criar uma ferramenta para criptografia e decriptografia de texto.
+## Tecnologias utilizadas
 
-Para criação desse projeto,foram utilizadas as tecnologias: Html, Css e javascript.
-Este foi o primeiro desafio que participei no curso full stack na tescola Alura,em parceria com a Oracle.
+* HTML
+* CSS
+* Javascript
+
+## Autor
+Poliana Beatriz
+
