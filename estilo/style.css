@@ -83,7 +83,7 @@ footer{
     max-width: 80%;
     margin: 0 auto;
     background: #85787823;
-    padding: 20px;
+    margin-top: 95px;
 
 }
 @media(max-width:800px){
@@ -110,5 +110,6 @@ footer{
         font-size: 12px;
         width: 40%;
     }
+   
 
 }
