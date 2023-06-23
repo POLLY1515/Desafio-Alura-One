@@ -1,32 +1,27 @@
-var textInput = document.querySelector("#input-texto");
-var outInput = document.querySelector("#output");
+const outInput = document.querySelector("#output");
+
+
 
 
 function criptografar(){
 
-  var texto = textInput.value;
+    const inputTexto = document.querySelector("#input-texto").value;
 
-  var resultCripto = texto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat")
+    //substituindo as letras por string ou substrings
+    let resultCripto = inputTexto.replace(/e/g, "enter").replace(/i/g, "imes").replace(/a/g, "ai").replace(/o/g, "ober").replace(/u/g, "ufat")
+   
+
+    outInput.innerHTML =  resultCripto 
 
 
-  document.getElementById('output').innerHTML = '<textarea readonly id="input-texto">' + resultCripto + 
-  '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+
 }
-
 function descriptografar(){
 
-    var texto = textInput.value;
+    const inputTexto = document.querySelector("#input-texto").value;
 
-    var resultDescripto = texto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
+    const resultDescripto = inputTexto.replace(/enter/g, "e").replace(/imes/g, "i").replace(/ai/g, "a").replace(/ober/g, "o").replace(/ufat/g, "u");
 
-    document.getElementById('output').innerHTML = '<textarea readonly id="input-texto">' + resultDescripto + 
-    '</textarea>' + '<button class="btn-copiar" id="copiar" onclick="copiar()">Copiar</button>'
+    outInput.innerHTML =  resultDescripto;
+
 }
-
-function copiar() {
-    var textoCop = document.getElementById('input-texto');
-
-    textoCop.select();
-    document.execCommand('copy');
-    alert("Texto copiado.");
-} 

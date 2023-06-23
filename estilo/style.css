@@ -1,144 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
-
-:root{
-    --corprincipal: #ffc7f9;
-    --corsegundaria:#caf9ff;
-    --cortitulo:#7c0160;
-}
-
-body{
-    background: pink;
-
-}
-
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
+body{
+    width: 100vw;
+    height: 10vh;
+    background: #9b8f8f23;
 
-.cabecalho{
+}
+header{
+    width: 100%;
+    display: flex;
+    padding: 20px;
+}
+
+.itens img{
+    width: 10%;
+
+}
+
+.itens{
+    max-width: 80%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding: 2%;
-}
+    align-items: center;
 
-.cabecalho h1{
-    color: darkslateblue;
 }
+main{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+}
+.box{
+    display: flex;
+    justify-content: space-between;
 
-.cabecalho img{
-    max-width:70px;
-    max-height:70px;
-    width: auto;
-    height: auto;
+}
+textarea{
+    width: 40vw;
+    height: 300px;
+    font-size: 30px;
+    border: 2px solid #33067b;
+
+}
+h2{
+    font-weight: 700;
+}
+.box1 img{
+    width:50%;
+}
+.box1{
+    display: flex;
+    max-width: 40%;
+    padding: 40px;
+    background: #ffffff;
+    border: 2px solid #33067b;
+    border-radius: 10px;
+}
+p{
+    font-weight: 500;
+}
+.buttons{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.btn-criptografar, .btn-descriptografar{
+    width: 30%;
+    height: 40px;
+    font-weight: 700;
+    background: #85787823;
+    border: 2px solid #0f0532;
+    border-radius: 20px;
     
 }
 
-.container-input{
-    display: flex;
-    justify-content: space-between;
-    padding: 2% 0 0 4%;
+footer{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    background: #85787823;
+    padding: 20px;
+
 }
+@media(max-width:800px){
+ 
+    .box1 img{
+ 
+        display: none;
+     
+    }
+    .box1{
+        justify-content: center;
+        max-width: 50%;
+        margin-left: 10px;
 
-.container-input .input{
-    width: 400px;
-    height: 330px;
-}
+    }
+    .box1 h2{
+        font-size: 20px;
+    }
+    .box1 span{
+        font-size: 12px;
+ 
+    }
+    .btn-criptografar, .btn-descriptografar{
+        font-size: 12px;
+        width: 40%;
+    }
 
-#input-texto{
-    width: 345px;
-    height: 330px;
-    font-size: 20px;
-    color:darkslateblue;
-    background: transparent;
-    box-shadow: none;
-    border: none;
-    resize: none;
-    outline: 0;
-    padding: 10px;
-    text-transform: uppercase;
-}
-
-
-#output{
-    display: flex;
-    flex-direction: column;
-    border: 3px solid darksalmon;
-    border-radius: 20px;
-    width: 350px;
-    height: 400px;
-    margin-right: 3%;
-}
-
-#output h2{
-    text-align: center;
-    font-size: 25px;
-    color:darkslateblue;
-}
-
-#output span{
-    font-size: 16px;
-    text-align: center;
-}
-
-#output img{
-    max-width:300px;
-    max-height:300px;
-    width: auto;
-    height: auto;
-    margin-top: 4%;
-}
-
-.container-bnt button{
-    border: 2px solid darksalmon;
-    border-radius: 10px;
-    text-decoration: none;
-    color:darkslateblue;
-    width: 150px;
-    height: 50px;
-    margin-left: 4%;
-    cursor: pointer;
-}
-
-.btn-copiar{
-    border: 2px solid black;
-    border-radius: 10px;
-    text-decoration: none;
-    color: darkslateblue;
-    width: 150px;
-    height: 50px;
-    margin-bottom: 10%;
-    margin-left: 30%;
-    cursor: pointer;
-}
-
-.container-bnt button:hover{
-   border: 2px solid darksalmon;
-   transition: 0.5s all;
-}
-
-.rodape{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2%;
-    margin-top: 15px ;
-    background:var(--corprincipal) ;
-    color: darkslateblue;
-}
-
-.rodape h3{
-    font-size: 16px;
-}
-
-.icons ion-icon{
-    width: 25px;
-    height: 25px;
-    color: var(--cortitulo);
-}
-
-.icons ion-icon:hover{
-    color: var(--corsegundaria);
 }
